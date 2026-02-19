@@ -51,6 +51,8 @@ class StoryMenuState extends MusicBeatState
 
 	override function create()
 	{
+		FlxG.mouse.visible = false;
+		
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 

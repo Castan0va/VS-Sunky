@@ -3,6 +3,7 @@ package states;
 import flixel.FlxObject;
 import options.OptionsState;
 import states.StoryMenuState;
+import states.FreeplayState;
 import states.editors.MasterEditorMenu;
 
 class SunkyMainMenuState extends MusicBeatState {

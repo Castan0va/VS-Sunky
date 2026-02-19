@@ -54,6 +54,8 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
+		FlxG.mouse.visible = false;
+		
 		//Paths.clearStoredMemory();
 		//Paths.clearUnusedMemory();
 		
@@ -151,7 +153,6 @@ class FreeplayState extends MusicBeatState
 		add(diffText);
 
 		add(scoreText);
-
 
 		missingTextBG = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		missingTextBG.alpha = 0.6;

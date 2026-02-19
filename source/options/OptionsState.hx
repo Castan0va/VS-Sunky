@@ -44,6 +44,7 @@ class OptionsState extends MusicBeatState
 
 	override function create()
 	{
+		FlxG.mouse.visible = false;
 		#if DISCORD_ALLOWED
 		DiscordClient.changePresence("Options Menu", null);
 		#end

@@ -3,7 +3,8 @@ function onCreate()
 	makeLuaSprite('ground', 'stages/mpeg/partyfloor',-570,-200)
  	makeLuaSprite('ball', 'stages/mpeg/discoball' ,-560,-100)
 	makeLuaSprite('overlay', 'stages/mpeg/partyoverlay' ,-500,-230)
-	makeLuaSprite('black', 'stages/mpeg/blackpng' ,-500,-230)
+	makeLuaSprite('black', '' ,-500,-230)
+	makeGraphic('black', 2000, 1000, '000000')
 	makeAnimatedLuaSprite('speakers', 'stages/mpeg/partyspeakers', -600, -190, 0, 0)
 	addAnimationByPrefix('speakers', 'idle', 'idle', 12, false)
 	makeAnimatedLuaSprite('lightpull', 'stages/mpeg/lightpull', 280, 0, 0, 0)
@@ -30,8 +31,10 @@ function onCreate()
 
 	setObjectCamera('lightpull', 'hud')
 
-	makeLuaSprite('borderL', 'bordersideL' ,0,0)
-    makeLuaSprite('borderR', 'bordersideR' ,1120,0)
+	makeLuaSprite('borderL', '' ,-10, -10)
+    makeLuaSprite('borderR', '' ,1120, -10)
+	makeGraphic('borderL', 160, 740, '000000')
+	makeGraphic('borderR', 170, 740, '000000')
 
     setObjectCamera('borderL', 'hud')
     setObjectCamera('borderR', 'hud')
@@ -51,25 +54,26 @@ function onCreatePost()
 	noteTweenX("correction4", 7, 1000, 0.1, linear)
 	doTweenAlpha('overlaybye', 'overlay', 0, 0.01, linear)
 	doTweenAlpha('ballbye', 'ball', 0, 0.01, linear)
+	for i = 0, 3 do
+		setPropertyFromGroup('playerStrums', i, 'visible', false)
+		setPropertyFromGroup('opponentStrums', i, 'visible', false)
+	end
+	runHaxeCode([[
+		FlxG.mouse.visible = true;
+	]])
 end
 
 function onStepHit()
 	if curStep == 6 then
-	setProperty('scoreTxt.visible', false)
-    setProperty('healthBar.visible', false) -- change this & next 3 to true if u want health
-    setProperty('healthBarBG.visible', false)
-    setProperty('iconP1.visible', false)
-    setProperty('iconP2.visible', false)
-    setProperty('timeTxt.visible', false)
-    setProperty('timeBar.visible', false)
-    setProperty('timeBarBG.visible', false)
-	setProperty('health.visible', false)
-
-    setPropertyFromGroup('playerStrums', 0, 'alpha', 0)
-    setPropertyFromGroup('playerStrums', 1, 'alpha', 0)
-	setPropertyFromGroup('playerStrums', 2, 'alpha', 0)
-	setPropertyFromGroup('playerStrums', 3, 'alpha', 0)
-
+		setProperty('scoreTxt.visible', false)
+		setProperty('healthBar.visible', false) -- change this & next 3 to true if u want health
+		setProperty('healthBar2.visible', false)
+		setProperty('iconP1.visible', false)
+		setProperty('iconP2.visible', false)
+		setProperty('timeTxt.visible', false)
+		setProperty('timeBar.visible', false)
+		setProperty('timeBarBG.visible', false)
+		setProperty('health.visible', false)
     end
 	if curStep == 101 then
 		playAnim('lightpull', 'light pull')
@@ -81,18 +85,17 @@ function onStepHit()
 
 		setProperty('scoreTxt.visible', true)
         setProperty('healthBar.visible', true)
-		setProperty('health.visible', true)
 		setProperty('healthBarBG.visible', true)
+		setProperty('healthBar2.visible', true)
         setProperty('iconP1.visible', true)
         setProperty('iconP2.visible', true)
         setProperty('timeTxt.visible', true)
         setProperty('timeBar.visible', true)
         setProperty('timeBarBG.visible', true)
 
-        setPropertyFromGroup('playerStrums', 0, 'alpha', 1)
-        setPropertyFromGroup('playerStrums', 1, 'alpha', 1)
-        setPropertyFromGroup('playerStrums', 2, 'alpha', 1)
-        setPropertyFromGroup('playerStrums', 3, 'alpha', 1)
+        for i = 0, 3 do
+		setPropertyFromGroup('playerStrums', i, 'visible', true)
+		setPropertyFromGroup('opponentStrums', i, 'visible', true)
+		end
 	end
 end
-

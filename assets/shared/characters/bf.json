@@ -1,145 +1,166 @@
 {
 	"animations": [
 		{
+			"offsets": [0, 0],
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "idle",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				4,
-				-1
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				5,
-				-1
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				5,
-				-2
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				4,
-				-2
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				1,
-				2
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "missright",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				5,
-				11
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "missdown",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-1,
-				4
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "missup",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				6,
-				2
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "missleft",
-			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 12,
-			"anim": "intro",
 			"indices": [],
-			"name": "intro"
+			"name": "idle"
+		},
+		{
+			"offsets": [5, -2],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [1, 2],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "missright"
+		},
+		{
+			"offsets": [5, 11],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "missdown"
+		},
+		{
+			"offsets": [-1, 4],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "missup"
+		},
+		{
+			"offsets": [6, 2],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "missleft"
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "yeah!",
+			"offsets": [0, 0],
+			"anim": "intro",
 			"fps": 12,
-			"name": "yeah",
+			"name": "intro",
 			"indices": []
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "yeah!",
+			"indices": [],
+			"name": "yeah"
+		},
+		{
+			"offsets": [5, -1],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [4, -2],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left"
+		},
+		{
+			"offsets": [4, -2],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "beatright"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "beatdown"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "beatup"
+		},
+		{
+			"offsets": [4, -1],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [4, -1],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "beatleft"
+		},
+		{
+			"offsets": [1, 2],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss-alt",
+			"loop": false,
+			"name": "beatmissleft"
+		},
+		{
+			"offsets": [5, 4],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss-alt",
+			"loop": false,
+			"name": "beatmissdown"
+		},
+		{
+			"offsets": [5, -2],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss-alt",
+			"loop": false,
+			"name": "beatmissup"
+		},
+		{
+			"offsets": [2, 2],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss-alt",
+			"loop": false,
+			"name": "beatmissright"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/BOYFRIENDsunk",
-	"position": [
-		-70,
-		190
-	],
+	"position": [-70, 190],
 	"healthicon": "bf",
 	"flip_x": true,
-	"healthbar_colors": [
-		49,
-		176,
-		209
-	],
-	"camera_position": [
-		320,
-		100
-	],
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [320, 100],
 	"sing_duration": 4,
 	"scale": 0.9,
 	"_editor_isPlayer": true

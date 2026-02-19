@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sunkbaby.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="click10000" x="0" y="0" width="400" height="400"/>
+	<SubTexture name="click10001" x="400" y="0" width="400" height="400"/>
+	<SubTexture name="click10002" x="800" y="0" width="400" height="400"/>
+	<SubTexture name="click10003" x="800" y="0" width="400" height="400"/>
+	<SubTexture name="click20000" x="1200" y="0" width="400" height="400"/>
+	<SubTexture name="click20001" x="1600" y="0" width="400" height="400"/>
+	<SubTexture name="click20002" x="0" y="400" width="400" height="400"/>
+	<SubTexture name="click20003" x="0" y="400" width="400" height="400"/>
+	<SubTexture name="clickded0000" x="400" y="400" width="400" height="400"/>
+	<SubTexture name="clickded0001" x="800" y="400" width="400" height="400"/>
+	<SubTexture name="clickpull0000" x="1200" y="400" width="400" height="400"/>
+	<SubTexture name="clickpull0001" x="1600" y="400" width="400" height="400"/>
+	<SubTexture name="clickpull0002" x="0" y="800" width="400" height="400"/>
+	<SubTexture name="clickpull0003" x="1200" y="400" width="400" height="400"/>
+	<SubTexture name="clickpull0004" x="1600" y="400" width="400" height="400"/>
+	<SubTexture name="clickpull0005" x="0" y="800" width="400" height="400"/>
+</TextureAtlas>

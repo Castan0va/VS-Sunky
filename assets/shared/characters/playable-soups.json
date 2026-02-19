@@ -1,116 +1,63 @@
 {
 	"animations": [
 		{
+			"offsets": [70, 0],
 			"loop": false,
-			"offsets": [
-				70,
-				0
-			],
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "left",
-			"indices": []
+			"indices": [],
+			"name": "left"
 		},
 		{
+			"offsets": [0, -100],
 			"loop": false,
-			"offsets": [
-				0,
-				-100
-			],
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down",
-			"indices": []
+			"indices": [],
+			"name": "down"
 		},
 		{
+			"offsets": [0, 50],
 			"loop": false,
-			"offsets": [
-				0,
-				50
-			],
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "up",
-			"indices": []
+			"indices": [],
+			"name": "up"
 		},
 		{
+			"offsets": [-60, 0],
 			"loop": false,
-			"offsets": [
-				-60,
-				0
-			],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "right",
-			"indices": []
+			"indices": [],
+			"name": "right"
 		},
 		{
+			"offsets": [0, 0],
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"fps": 24,
 			"anim": "danceRight",
-			"fps": 24,
-			"name": "idle",
-			"indices": [
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12
-			]
+			"indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+			"name": "idle"
 		},
 		{
+			"offsets": [0, 0],
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "danceLeft",
 			"fps": 24,
-			"name": "idle",
-			"indices": [
-				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22,
-				23
-			]
+			"anim": "danceLeft",
+			"indices": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+			"name": "idle"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/soups",
-	"position": [
-		-140,
-		-210
-	],
-	"healthicon": "soup sunk",
+	"position": [-140, -210],
+	"healthicon": "superSunky",
 	"flip_x": true,
-	"healthbar_colors": [
-		255,
-		255,
-		80
-	],
-	"camera_position": [
-		120,
-		320
-	],
+	"healthbar_colors": [255, 255, 80],
+	"camera_position": [120, 320],
 	"sing_duration": 4,
 	"scale": 0.8,
-	"_editor_isPlayer": false
+	"_editor_isPlayer": true
 }
